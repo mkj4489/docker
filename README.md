@@ -3,7 +3,7 @@
 - Docker自体は、Go言語で書かれている。
 
 - docker のインストール
--- https://store.docker.com/editions/community/docker-ce-desktop-windows
+- https://store.docker.com/editions/community/docker-ce-desktop-windows
 
 - docker Toolboxのインストール
--- https://docs.docker.com/toolbox/toolbox_install_windows/
+- https://docs.docker.com/toolbox/toolbox_install_windows/
