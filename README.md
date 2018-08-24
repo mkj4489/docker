@@ -3,19 +3,19 @@
 - Docker自体は、Go言語で書かれている。
 
 - Docker のインストール
-- https://store.docker.com/editions/community/docker-ce-desktop-windows
+  - https://store.docker.com/editions/community/docker-ce-desktop-windows
 
 - バージョンの確認
-- docker --version
+  - docker --version
 
 
 - docker run hello-world
-- https://hub.docker.com/_/hello-world/
+  - https://hub.docker.com/_/hello-world/
 
 - docker hub
-- https://hub.docker.com/
+  - https://hub.docker.com/
 
-- Dockerイメージとは
+### Dockerイメージとは
 - コンテナ実行に必要なファイルをまとめたファイルシステム
 - AUFSなどの特殊なファイルシステムが使用されている
 - イメージのデータはレイヤーで構成され、読み取り専用
