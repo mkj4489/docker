@@ -9,7 +9,7 @@
   - docker --version
 
 
-- docker run hello-world
+```docker run hello-world```
   - https://hub.docker.com/_/hello-world/
 
 - docker hub
