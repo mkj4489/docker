@@ -40,3 +40,19 @@ ________
         \    \        __/
           \____\______/```
           
+### ローカルのdocker imageの管理
+- ローカルのdockerイメージの確認
+```docker images```
+- タグ付け：リポジトリ名(my_walesay)をつけるコマンド
+``` docker tag docker/whalesay my_whalesay```
+- タグ付け(repo1)するコマンド
+``` docker tag docker/whalesay my_whalesay:repo1```
+- イメージの詳細情報を表示するコマンド
+```docker inspect my_whalesay```
+- ローカルのイメージを削除するコマンド
+```docker rmi docker/whalesay```
+- イメージを取得するコマンド(tag名を指定しない場合は、latestが取得される。latestが最新とは限らない)
+```docker pull docker/whalesay```
+
+### Dcokerfileを使用したイメージビルド方法
+- 
