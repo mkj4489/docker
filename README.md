@@ -55,4 +55,15 @@ ________
 ```docker pull docker/whalesay```
 
 ### Dcokerfileを使用したイメージビルド方法
-- 
+```vim Dockerfile```
+```FROM docker/whalesay:latest
+
+RUN apt-get -y update && apt-get install -y fortunes
+
+CMD /usr/games/fortune | cowsay
+```
+- Dockerfileからイメージ（この場合は、docker-whaleという名前）をビルドするコマンド(カレントディレクトリのファイルでビルドなので、最後に.がある)
+```docker build -t docker-whale . ```
+- 上記コマンドはDockerfileが変更されない限り、キャッシュされる。キャッシュしたくない場合は以下で実行。
+```docker build --no-cache -t docker-whale```
+
