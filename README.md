@@ -69,3 +69,12 @@ CMD /usr/games/fortune | cowsay
 - 上記コマンドはDockerfileが変更されない限り、キャッシュされる。キャッシュしたくない場合は以下で実行。
 ```docker build --no-cache -t docker-whale```
 
+### Docker Hubに登録する
+- https://hub.docker.com/add/repository/
+- Docker Hubにログインする場合
+  ```docker login```
+- Dcoker Hubにおけるタグ付けルール
+```<Docker ID>/<イメージ名>:<タグ名>```
+- pushするコマンド
+```docker push <Docker ID>/<イメージ名>:<タグ名>```
+  
