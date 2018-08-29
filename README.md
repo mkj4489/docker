@@ -77,4 +77,15 @@ CMD /usr/games/fortune | cowsay
 ```<Docker ID>/<イメージ名>:<タグ名>```
 - pushするコマンド
 ```docker push <Docker ID>/<イメージ名>:<タグ名>```
-  
+- nginxのコンテナを立ち上げるコマンド
+```docker run --name <コンテナ名> -d -p <ホスト側のポート番号>:<コンテナ側のポート番号> <イメージ名>```
+```docker run --name test-nginx -d -p 8080:80 nginx```
+```http://localhost:8080```
+- 
+```docker stop test-nginx```
+
+- docker cp コマンド
+```ホストマシンのファイルをコンテナ内にコピーする場合
+docker cp <ホスト上のコピーしたいファイルのパス> <コンテナ名 or ID>:<コピー先のパス>
+コンテナ内のファイルをホストマシンにコピーする場合
+docker cp <コンテナ名 or ID>:<ホスト上のコピーしたいファイルのパス> <コピー先のパス>```
